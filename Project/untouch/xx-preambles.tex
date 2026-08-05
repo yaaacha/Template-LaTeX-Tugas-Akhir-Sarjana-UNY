@@ -181,6 +181,13 @@
 \tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
 \tikzstyle{arrow} = [thick,->,>=stealth]
 
+% Watermark logo UNY kuning di tengah halaman (lembar persetujuan & pengesahan)
+\newcommand{\logowatermark}{%
+    \begin{tikzpicture}[remember picture, overlay]
+        \node at (current page.center) {\includegraphics[width=12cm]{gambar/logo-uny-kuning.png}};
+    \end{tikzpicture}%
+}
+
 %untuk if-then
 \usepackage{ifthen}
 
